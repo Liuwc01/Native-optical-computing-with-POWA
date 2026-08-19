@@ -1,0 +1,3 @@
+implementation,convolution_layers,kernel_height,kernel_width,input_channels,output_channels,parameters_per_layer,total_parameters,parameter_type,count_formula
+electronic_style_bank,2,3,3,256,256,589824,1179648,dense_convolution_weights,"2*3*3*256*256"
+optical_style_bank,4,2,2,256,256,32768,131072,wavelength_parameters,"4*2*2*256*256/8"

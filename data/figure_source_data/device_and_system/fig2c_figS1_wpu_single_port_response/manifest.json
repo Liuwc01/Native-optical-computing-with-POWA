@@ -1,0 +1,31 @@
+{
+  "dataset_id": "fig2c_figS1_wpu_single_port_response",
+  "title": "WPU output-port 7 response with explicit wavelength axis",
+  "related_figures": ["Fig. 2c", "Fig. S1"],
+  "file": {
+    "path": "wpu_output_port7_response_with_wavelength_axis.mat",
+    "sha256": "d60bd8a88a88813507661470d3640b0fdf4889c526e25ebb4631e3538c29a529",
+    "format": "MATLAB v7.3 / HDF5",
+    "variable": "xiangying2",
+    "shape": [2, 2400001],
+    "rows": [
+      {
+        "row": 1,
+        "definition": "wavelength",
+        "unit": "nm",
+        "start": 1500.0,
+        "stop": 1620.0,
+        "stored_increment": 0.00005
+      },
+      {
+        "row": 2,
+        "definition": "WPU output-port 7 response",
+        "unit": "dB",
+        "minimum": -42.62924298475487,
+        "maximum": -29.54988455481976
+      }
+    ],
+    "cross_check": "response row is exactly equal to column 7 of data/source/wpu_spectrum_1500_1620_db.mat"
+  },
+  "copy_processing": "file renamed descriptively; numeric contents unchanged"
+}

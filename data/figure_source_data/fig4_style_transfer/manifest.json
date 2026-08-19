@@ -1,0 +1,86 @@
+{
+  "dataset_id": "fig4_style_transfer",
+  "title": "Style-transfer training, parameter and fusion source data",
+  "release_class": "public author-generated numerical source data",
+  "manuscript_figure_mapping": [
+    {
+      "figure": "Fig. 4d",
+      "file": "fig4d_figS14_style_fusion_weights.csv",
+      "selection": "five displayed latent-space fusion proportions"
+    },
+    {
+      "figure": "Fig. 4e",
+      "file": "fig4e_content_style_loss_curves.csv",
+      "selection": "electronic and optical content/style losses at common logged training indices 1-132"
+    },
+    {
+      "figure": "Fig. 4f",
+      "file": "fig4f_style_bank_parameter_comparison.csv",
+      "selection": "style-bank layer, kernel and exact parameter counts"
+    },
+    {
+      "figure": "Fig. S13",
+      "file": "fig4f_style_bank_parameter_comparison.csv",
+      "selection": "2-layer 3 x 3 electronic bank and 4-layer 2 x 2 optical bank definitions stated in the caption"
+    },
+    {
+      "figure": "Fig. S14",
+      "file": "fig4d_figS14_style_fusion_weights.csv",
+      "selection": "five displayed latent-space fusion proportions"
+    }
+  ],
+  "raw_logs": [
+    {
+      "repository_path": "electronic_style_bank_training_log_raw.txt",
+      "sha256": "84676670941a403241b7072d20fb2793bac70b54944e470a524c5fe7af7c186f",
+      "logged_records": 132,
+      "learning_rate_records": 13
+    },
+    {
+      "repository_path": "optical_style_bank_training_log_raw.txt",
+      "sha256": "0e4229ab8de54c97637207694d0eb0d42f7afb5d5d0d99acafbc48ae1b315363",
+      "logged_records": 133,
+      "learning_rate_records": 13
+    }
+  ],
+  "derived_files": [
+    {
+      "path": "electronic_style_bank_training_history.csv",
+      "sha256": "577d4f1b7f59e9522118658c6f088a9e3c9a000869831546114e3ce9436e21c3",
+      "rows": 132,
+      "derivation": "loss and learning-rate fields parsed verbatim from the electronic raw log"
+    },
+    {
+      "path": "optical_style_bank_training_history.csv",
+      "sha256": "3ef2beb50501ced591038d4984730a81148a77379f36db8d91afe618731c2109",
+      "rows": 133,
+      "derivation": "loss and learning-rate fields parsed verbatim from the optical raw log"
+    },
+    {
+      "path": "fig4e_content_style_loss_curves.csv",
+      "sha256": "af9b98b26ee5b773facb5d98ee891b88fd80e4f531c6408620344a17eebc8e7a",
+      "rows": 132,
+      "derivation": "inner join of the two parsed histories on logged_index; content_loss and style_loss values copied without transformation"
+    },
+    {
+      "path": "fig4f_style_bank_parameter_comparison.csv",
+      "sha256": "2d1b803a08aec9e3c75534d11ac0604beec60abdd71b20dfa37315cca5bcca4b",
+      "rows": 2,
+      "derivation": "exact counts from the bank dimensions: 2*3*3*256*256 and 4*2*2*256*256/8"
+    },
+    {
+      "path": "fig4d_figS14_style_fusion_weights.csv",
+      "sha256": "8bc5dbeefb6d899a1b732e0ba5fc0e9269db37f92698603422532e5f761b8d73",
+      "rows": 5,
+      "derivation": "transcription of the displayed 0%, 25%, 50%, 75% and 100% labels; complementary weight calculated as 1-w"
+    }
+  ],
+  "operations_not_applied_to_loss_values": [
+    "smoothing",
+    "interpolation",
+    "normalization",
+    "filtering",
+    "display-axis compression",
+    "value replacement"
+  ]
+}

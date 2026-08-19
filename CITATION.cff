@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "Please cite this software when using the code or distributed data."
+title: "Native optical computing with POWA"
+type: software
+version: 0.1.0
+date-released: 2026-08-19
+license: MIT
+repository-code: "https://github.com/Liuwc01/Native-optical-computing-with-POWA"
+authors:
+  - family-names: Liu
+    given-names: Wencan
+  - family-names: Zhao
+    given-names: Lehan
+  - family-names: Chen
+    given-names: Yutai
+  - family-names: Wu
+    given-names: Mingjie
+  - family-names: Wang
+    given-names: Yuhao
+  - family-names: Deng
+    given-names: Changmao
+  - family-names: Chen
+    given-names: Junyi
+  - family-names: Zhang
+    given-names: Zhenghang
+  - family-names: Chan
+    given-names: Peng Meng
+  - family-names: Sun
+    given-names: Run
+  - family-names: Fu
+    given-names: Tingzhao
+  - family-names: Yang
+    given-names: Sigang
+  - family-names: Yang
+    given-names: Junbo
+  - family-names: Wu
+    given-names: Jiagui
+  - family-names: Chen
+    given-names: Hongwei

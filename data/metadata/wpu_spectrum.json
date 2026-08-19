@@ -1,0 +1,25 @@
+{
+  "dataset_title": "Eight-port WPU spectrum over 1500-1620 nm",
+  "source_file": "data/source/wpu_spectrum_1500_1620_db.mat",
+  "source_sha256": "f121dc2701d4e0e3395d205dac20fd38e50ed8b8eff9d0932b2688f54c7a2cd6",
+  "source_matlab_variable": "xiangying2",
+  "hdf5_array_shape": [
+    2400001,
+    8
+  ],
+  "matlab_logical_shape": [
+    8,
+    2400001
+  ],
+  "spectral_span_nm": {
+    "start": 1500.0,
+    "stop": 1620.0
+  },
+  "response_unit": "dB",
+  "output_ports": 8,
+  "axis_note": "The MAT file contains the full stored spectrum array but no separate wavelength vector. The spectral span is recorded from the associated measurement record; no operational training subset is distributed in this repository.",
+  "manuscript_mapping": [
+    "Fig. 2c",
+    "Supplementary Fig. S1"
+  ]
+}

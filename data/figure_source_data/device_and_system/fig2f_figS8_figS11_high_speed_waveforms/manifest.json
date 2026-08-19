@@ -1,0 +1,37 @@
+{
+  "dataset_id": "fig2f_figS8_figS11_high_speed_waveforms",
+  "title": "High-speed input and experimental waveform exports",
+  "related_figures": ["Fig. 2f", "Fig. S8", "Fig. S11"],
+  "mapping_note": "The files are associated with the high-speed system analysis; exact panel crop and channel selection are not encoded in the source files.",
+  "files": [
+    {
+      "path": "ideal_input_waveform_500MHz_AWG_10GSa.txt",
+      "sha256": "46ae89d4549dee1f1c6768fe788890dc903464aa36e301e5f5c81d51731231b0",
+      "format": "headerless one-column text",
+      "shape": [3870020, 1],
+      "minimum": 0.0,
+      "maximum": 0.9921569,
+      "source_filename_metadata": "500Mhz_AWG10Gsa"
+    },
+    {
+      "path": "experimental_oscilloscope_export_3col.csv",
+      "sha256": "602850d5110f71dad9018694c6df91c79ea4a78d413b1ed2daa99d45ae0c0a51",
+      "format": "headerless CSV",
+      "shape": [1048576, 3],
+      "column_minima": [-0.000239, -0.165, -0.0268],
+      "column_maxima": [-0.000186, -0.0727, 0.0122],
+      "column_units": "not encoded in the file"
+    },
+    {
+      "path": "experimental_channel3_extract.csv",
+      "sha256": "810123b7a01d4d42eb2fd6ba76ce8998f3a9e251c4fcedb70a6a31b638db6843",
+      "format": "headerless one-column CSV",
+      "shape": [1048576, 1],
+      "minimum": -0.0268,
+      "maximum": 0.0122,
+      "relationship": "exactly equal to column 3 of experimental_oscilloscope_export_3col.csv",
+      "unit": "not encoded in the file"
+    }
+  ],
+  "copy_processing": "files renamed descriptively; numeric contents unchanged"
+}

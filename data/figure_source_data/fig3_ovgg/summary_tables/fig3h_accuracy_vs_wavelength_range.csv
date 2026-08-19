@@ -1,0 +1,8 @@
+wavelength_index_intervals,wavelength_switching_range_nm,sampled_wavelength_points,cifar10_accuracy_percent,cifar100_accuracy_percent
+20,4,21,86.8,56.4
+50,10,51,87.8,59.4
+80,16,81,88.3,60.6
+100,20,101,88.6,61.1
+150,30,151,88.8,61.4
+200,40,201,89,61.9
+300,60,301,89.3,62.1

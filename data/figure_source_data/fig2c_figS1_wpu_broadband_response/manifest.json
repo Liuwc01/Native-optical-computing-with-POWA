@@ -1,0 +1,93 @@
+{
+  "dataset_id": "fig2c_figS1_wpu_broadband_response",
+  "title": "Eight-port WPU broadband response source data",
+  "release_class": "public author-generated source data",
+  "manuscript_figure_mapping": [
+    {
+      "figure": "Fig. 2c",
+      "pdf_page": 8,
+      "selection": "response_db row 7 (output_port_id 7), all wavelengths",
+      "verification": "peak-to-peak range is 13.0433028863 dB; the figure annotates approximately 13 dB"
+    },
+    {
+      "figure": "Fig. S1",
+      "pdf_page": 18,
+      "selection": "response_db rows 1-8, all wavelengths",
+      "verification": "12,001 points span 1500-1620 nm at 0.01-nm (10-pm) spacing"
+    }
+  ],
+  "source": {
+    "repository_path": "data/source/wpu_spectrum_1500_1620_db.mat",
+    "sha256": "f121dc2701d4e0e3395d205dac20fd38e50ed8b8eff9d0932b2688f54c7a2cd6",
+    "matlab_variable": "xiangying2",
+    "hdf5_physical_shape": [2400001, 8],
+    "matlab_logical_orientation": "8 output ports x 2,400,001 stored samples",
+    "unit": "dB",
+    "wavelength_vector_present": false
+  },
+  "derived_file": {
+    "path": "wpu_broadband_response_1500_1620_10pm.mat",
+    "sha256": "e5b2b53ba8f5a9ea1b2c991f72c902fa2d3075bf0eef73b54e0f8d397fbfebae",
+    "format": "MATLAB v5 MAT",
+    "variables": {
+      "wavelength_nm": {
+        "shape": [1, 12001],
+        "unit": "nm"
+      },
+      "response_db": {
+        "shape": [8, 12001],
+        "unit": "dB"
+      },
+      "output_port_id": {
+        "shape": [1, 8],
+        "unit": "unitless"
+      },
+      "source_sample_index_1based": {
+        "shape": [1, 12001],
+        "unit": "unitless"
+      }
+    }
+  },
+  "derivation": {
+    "source_selection_zero_based": "xiangying2[0:2400001:200, :]",
+    "output_orientation": "transpose selected array to output_port x wavelength",
+    "wavelength_axis_nm": {
+      "start": 1500.0,
+      "stop": 1620.0,
+      "spacing": 0.01,
+      "points": 12001,
+      "provenance": "reconstructed from manuscript endpoints and the 10-pm interval stated in the Fig. S1 caption; the source MAT file contains no wavelength vector"
+    },
+    "operations_not_applied": [
+      "interpolation",
+      "smoothing",
+      "normalization",
+      "filtering",
+      "unit conversion",
+      "value replacement"
+    ]
+  },
+  "quality_checks": {
+    "all_response_values_finite": true,
+    "first_source_sample_index_1based": 1,
+    "last_source_sample_index_1based": 2400001,
+    "source_index_increment": 200,
+    "port7_peak_to_peak_db": 13.043302886335773,
+    "per_port_peak_to_peak_db": [
+      13.55502037467486,
+      14.50507761871873,
+      14.50507761871873,
+      12.251144329451346,
+      14.677914443574682,
+      13.097274568274862,
+      13.043302886335773,
+      13.55502037467486
+    ]
+  },
+  "generation_software": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "h5py": "3.15.1",
+    "scipy": "1.16.3"
+  }
+}

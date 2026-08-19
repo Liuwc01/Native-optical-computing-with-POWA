@@ -1,0 +1,18 @@
+{
+  "title": "Device and system experimental source data",
+  "resource_type": "author-generated numeric source data",
+  "packages": [
+    {
+      "path": "fig2c_microring_response",
+      "related_figures": ["Fig. 2c"]
+    },
+    {
+      "path": "fig2c_figS1_wpu_single_port_response",
+      "related_figures": ["Fig. 2c", "Fig. S1"]
+    },
+    {
+      "path": "fig2f_figS8_figS11_high_speed_waveforms",
+      "related_figures": ["Fig. 2f", "Fig. S8", "Fig. S11"]
+    }
+  ]
+}

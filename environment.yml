@@ -1,0 +1,12 @@
+name: powa
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - h5py>=3.9
+  - numpy>=1.24
+  - scipy>=1.10
+  - pip>=23
+  - pip:
+      - torch>=2.1
+      - torchvision>=0.16

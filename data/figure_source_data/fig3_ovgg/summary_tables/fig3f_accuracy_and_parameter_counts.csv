@@ -1,0 +1,7 @@
+dataset,model_or_training_mode,test_accuracy_percent,parameter_count
+CIFAR-10,O-VGG16 without discretization,89.5,1093482
+CIFAR-10,O-VGG16 with discretization,88.6,1093482
+CIFAR-10,Electronic VGG16,90.4,6814218
+CIFAR-100,O-VGG16 without discretization,62.6,1139652
+CIFAR-100,O-VGG16 with discretization,61.1,1139652
+CIFAR-100,Electronic VGG16,64.2,6860388

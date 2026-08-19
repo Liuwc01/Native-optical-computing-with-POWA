@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.mat binary
+*.npz binary
+*.pth binary
+*.npy binary
+*.fig binary
+examples/ovgg_cifar10_sample/test_metrics.json binary
+
+# Preserve author-generated numeric exports byte-for-byte so that the
+# package checksums remain stable across platforms.
+data/figure_source_data/**/*.csv binary
+data/figure_source_data/**/*.txt binary
+data/figure_source_data/**/*.m binary

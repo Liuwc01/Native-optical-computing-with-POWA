@@ -1,0 +1,6 @@
+display_order,displayed_weight_fraction,complementary_weight_fraction,display_label
+1,0.00,1.00,0%
+2,0.25,0.75,25%
+3,0.50,0.50,50%
+4,0.75,0.25,75%
+5,1.00,0.00,100%

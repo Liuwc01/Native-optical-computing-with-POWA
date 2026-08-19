@@ -1,0 +1,10 @@
+{
+  "accuracy": 0.886,
+  "codebook_fingerprint": "91c0e47ca0b1e26fdde86718b6169a10fd9387b267b1c1444e1a6edfce5e947d",
+  "correct": 8860,
+  "cross_entropy": 0.42883576979637145,
+  "dataset": "cifar10",
+  "head_variant": "gap_2fc",
+  "mode": "rounded_deployment",
+  "total": 10000
+}

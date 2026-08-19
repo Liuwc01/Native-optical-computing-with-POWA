@@ -1,0 +1,40 @@
+{
+  "dataset_id": "fig2c_microring_response",
+  "title": "Microring spectral-response source data associated with Fig. 2c",
+  "related_figures": ["Fig. 2c"],
+  "files": [
+    {
+      "path": "microring_response_full_source_1500_1620.fig",
+      "sha256": "0be22b9a94a01f71f606fb38a2ea6f098e575a9246da41cac57fb6ca69cd77cd",
+      "format": "MATLAB v7.3 figure / HDF5",
+      "stored_curve": {
+        "x_dataset": "#refs#/y/XData",
+        "y_dataset": "#refs#/y/YData",
+        "points": 2400001,
+        "x_start_nm": 1500.0,
+        "x_stop_nm": 1620.0,
+        "stored_x_increment_nm": 0.00005,
+        "y_min": 31.22,
+        "y_max": 47.7,
+        "y_unit_note": "not encoded as a standalone field in the extracted MAT arrays"
+      }
+    },
+    {
+      "path": "microring_response_full_y_values.mat",
+      "sha256": "b723f6d38511d8f8d4912ad5148acc42f3c33e331d9ecdd4491fb493d1463f7c",
+      "format": "MATLAB MAT",
+      "variable": "all_y_coordinates",
+      "points": 2400001,
+      "relationship": "exactly equal to the YData array in the source MATLAB figure"
+    },
+    {
+      "path": "microring_response_10pm_y_values.mat",
+      "sha256": "9c29ba1e4d7a3ae5578332c1282fd3077e02957c91117ae414eb4f5d9920c69f",
+      "format": "MATLAB MAT",
+      "variable": "y",
+      "points": 12001,
+      "relationship": "exactly equal to every 200th value of the full YData array"
+    }
+  ],
+  "copy_processing": "files renamed descriptively; numeric contents unchanged"
+}
